@@ -1,0 +1,41 @@
+{
+  "name": "preconnect-webpack-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "preconnect",
+    "dns-prefetch"
+  ],
+  "homepage": "https://github.com/zhangdexian/preconnect-webpack-plugin",
+  "bugs": "https://github.com/zhangdexian/preconnect-webpack-plugin/issues",
+  "repository": "https://github.com/zhangdexian/preconnect-webpack-plugin.git",
+  "license": "ISC",
+  "author": "",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "prepublishOnly": "npm run build",
+    "sort": "npx sort-package-json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^17.0.41",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.73.0"
+  },
+  "peerDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.73.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
